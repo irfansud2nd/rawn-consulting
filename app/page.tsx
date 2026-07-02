@@ -1,16 +1,7 @@
-import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
 import { Mail } from "lucide-react"
 import Link from "next/link"
 import { FaInstagram } from "react-icons/fa"
-import { Inter } from "next/font/google"
-import { Metadata } from "next"
-
-const inter = Inter({ subsets: ["latin"], variable: "--font-sans" })
-
-export const metadata: Metadata = {
-  title: "RAWN Consulting",
-}
 
 export default function Page() {
   return (
@@ -23,8 +14,9 @@ export default function Page() {
         backgroundSize: "20px 20px",
       }}
     >
+      <h1 className="sr-only">RAWN Consulting</h1>
       <div className="flex w-full flex-col items-center">
-        <h1
+        <p
           className={cn(
             "absolute top-30 mb-5 text-center text-2xl font-bold tracking-widest uppercase md:mb-10 md:text-4xl"
           )}
@@ -34,7 +26,7 @@ export default function Page() {
           <span className="underline max-md:hidden"> </span>
           <br className="md:hidden" />
           <span className="underline">Construction</span>
-        </h1>
+        </p>
         <img src="/logo.png" className="max-w-50 md:max-w-xs" />
         <div className="mt-6 flex w-full max-w-2xl flex-col items-center gap-5">
           <p className="text-center text-xl md:text-3xl">

@@ -13,11 +13,15 @@ const fontMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://rawnconsulting.com"),
   title: {
     template: "%s - RAWN",
-    default: "RAWN",
+    default: "RAWN Consulting",
   },
   description: "RAWN Consulting, Where Legal Meets Strategy",
+  icons: {
+    icon: "./favicon.ico",
+  },
 }
 
 export default function RootLayout({
